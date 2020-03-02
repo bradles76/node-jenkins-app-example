@@ -18,3 +18,4 @@ pipeline {
         sh 'npm test'
       }
     } 
+  }
