@@ -17,14 +17,4 @@ pipeline {
       steps {
         sh 'npm test'
       }
-    }
-    }
-
-    stage('Build image') {
-        /* This builds the actual image; synonymous to
-         * docker build on the command line */
-
-        app = docker.build("bradles76/node-jenkins-app-example")
-    }
-  }
 }
